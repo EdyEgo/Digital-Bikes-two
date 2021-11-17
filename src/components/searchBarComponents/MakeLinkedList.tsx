@@ -48,7 +48,8 @@ const MakeLinkedList: React.FC<MakeLinkedListProps> = ({list,pageState}) => {
 
           
         const pageState_lower = pageState.toLowerCase();
-        if(pageState_lower === 'motorcycles') return `product/${category} ${brandName} ${productName}`
+        console.log('wth ???',category,brandName,productName)
+        if(pageState_lower === 'motorcycles') return `/product/${category} ${brandName} ${productName}`
 
           return `/${pageState_lower}/product/${category} ${brandName} ${productName}`;
 
